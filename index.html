@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Molinaz Dev | Showroom de Demos Web para Turismo en Perú (Google Meet Edition)</title>
+  
+  <meta name="description" content="Showcase comercial de páginas web turísticas para operadores en Cusco, Ayacucho, Arequipa y playas. Optimizado para presentaciones comerciales en Google Meet.">
+  <meta name="keywords" content="Turismo Perú, páginas web turismo, agencias de viaje Cusco, turismo vivencial Ayacucho, cabalgatas Colca Arequipa, Molinaz Dev">
+  
+  <!-- Favicon con Sol Andino -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23C85A32'><path d='M9 2h6v5h5v6h-5v5H9v-5H4V7h5V2z'/></svg>">
+
+  <!-- Google Fonts: Playfair Display (Editorial Andino), Outfit y Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+
+  <!-- Top Decorative Andean Textile Ribbon (Guarda Pampa tradicional) -->
+  <div class="andean-ribbon-top"></div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <div class="brand-crest">
+          <i data-lucide="sun"></i>
+        </div>
+        <div class="brand-info">
+          <div class="brand-title-row">
+            <span class="brand-name">Molinaz<span class="accent-text">Dev</span></span>
+            <span class="peru-tag">🇵🇪 PERÚ</span>
+          </div>
+          <span class="brand-badge">Showroom Comercial • Turismo & Travel Tech</span>
+        </div>
+      </div>
+
+      <!-- Meet Navigation Anchors -->
+      <div class="meet-nav-links">
+        <a href="#catalogo" class="meet-link active">1. Ver Demos</a>
+        <a href="#paletas" class="meet-link">2. Paletas Canva</a>
+        <a href="#configurador" class="meet-link">3. Configurador en Vivo</a>
+        <a href="#beneficios" class="meet-link">4. Entrega & Feedback</a>
+      </div>
+
+      <nav class="nav-actions">
+        <button class="btn btn-ghost" id="openSalesGuideBtn" title="Guion paso a paso para el vendedor durante la llamada">
+          <i data-lucide="sparkles"></i>
+          <span>Guion para Google Meet</span>
+        </button>
+        <a href="https://wa.me/51987654321?text=Hola%20Molinaz%20Dev%2C%20estoy%20en%20llamada%20con%20un%20cliente%20interesado%20en%20una%20propuesta%20web." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-nav" title="Hablar con el equipo comercial">
+          <i data-lucide="message-circle"></i>
+          <span>WhatsApp Comercial</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section con Identidad Turística Peruana -->
+  <section class="hero-section">
+    <div class="topo-bg-layer"></div>
+
+    <div class="container hero-container">
+      <div class="heritage-badge">
+        <i data-lucide="video"></i>
+        <span>Showroom Comercial para Compartir Pantalla</span>
+      </div>
+
+      <h1 class="hero-title">
+        Páginas Web con Alma Andina <br>
+        <span class="serif-title">que Convierten Viajeros en Clientes</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Demuéstrale a tu cliente cómo una web moderna e intuitiva le permite vender tours directamente a su WhatsApp sin pagar hasta 30% de comisiones a intermediarios.
+      </p>
+
+      <!-- Badges de Destinos del Perú -->
+      <div class="destinations-pills">
+        <span class="dest-pill"><i data-lucide="mountain"></i> Cusco & Machu Picchu</span>
+        <span class="dest-pill"><i data-lucide="trees"></i> Valle del Sondondo (Ayacucho)</span>
+        <span class="dest-pill"><i data-lucide="compass"></i> Cañón del Colca (Arequipa)</span>
+        <span class="dest-pill"><i data-lucide="sun"></i> Caribe & Internacional</span>
+      </div>
+
+      <!-- Métricas Clave de Venta -->
+      <div class="metrics-strip">
+        <div class="metric-item">
+          <div class="metric-icon"><i data-lucide="sparkles"></i></div>
+          <div class="metric-text">
+            <span class="metric-value" id="demoCount">4</span>
+            <span class="metric-label">Modelos en Vivo</span>
+          </div>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <div class="metric-icon"><i data-lucide="smartphone"></i></div>
+          <div class="metric-text">
+            <span class="metric-value">100% Celular</span>
+            <span class="metric-label">Turistas en Ruta</span>
+          </div>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <div class="metric-icon"><i data-lucide="percent"></i></div>
+          <div class="metric-text">
+            <span class="metric-value">0% Comisiones</span>
+            <span class="metric-label">Reservas Directas</span>
+          </div>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <div class="metric-icon"><i data-lucide="refresh-cw"></i></div>
+          <div class="metric-text">
+            <span class="metric-value">10 a 20 Días</span>
+            <span class="metric-label">Feedback Continuo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter and Search Control Center -->
+  <section class="controls-section" id="catalogo">
+    <div class="container">
+      <div class="controls-card">
+        <!-- Search and Live Count -->
+        <div class="search-row">
+          <div class="search-input-wrapper">
+            <i data-lucide="search" class="search-icon"></i>
+            <input type="text" id="searchInput" placeholder="Filtrar por destino (Cusco, Colca, Sondondo), tipo de tour o función..." autocomplete="off">
+            <button id="clearSearchBtn" class="clear-search-btn" title="Limpiar búsqueda" style="display: none;">
+              <i data-lucide="x"></i>
+            </button>
+          </div>
+          <div class="results-count-badge">
+            Mostrando <strong id="visibleCount">4</strong> de <strong id="totalCount">4</strong> modelos
+          </div>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="categories-wrapper">
+          <div class="categories-scroll" id="categoryTabs">
+            <!-- Dynamic Category Pills -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Showcase Grid Section -->
+  <main class="showcase-section">
+    <div class="container">
+      <div class="section-intro-bar">
+        <div>
+          <span class="intro-kicker">Paso 1 de la Presentación</span>
+          <h2 class="intro-title">Selecciona el Modelo Más Parecido a tu Cliente</h2>
+        </div>
+        <p class="intro-desc">
+          Haz clic en <strong>"Abrir Web en Vivo"</strong> para compartir la pantalla con el cliente en tiempo real, o usa <strong>"Simulador Móvil"</strong> para mostrarle cómo se ve en smartphones.
+        </p>
+      </div>
+
+      <div class="demos-grid" id="demosGrid">
+        <!-- Dynamic Demo Cards injected by app.js -->
+      </div>
+
+      <!-- Empty State -->
+      <div class="empty-state" id="emptyState" style="display: none;">
+        <div class="empty-icon">
+          <i data-lucide="compass"></i>
+        </div>
+        <h3>No encontramos modelos con esos términos</h3>
+        <p>Prueba con "Cusco", "Colca", "Ayacucho" o haz clic en "Ver Todas".</p>
+        <button class="btn btn-outline" id="resetFiltersBtn">
+          <i data-lucide="rotate-ccw"></i>
+          <span>Ver Todas las Demos</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================================== -->
+  <!-- SECCIÓN 2: PALETAS DE COLOR DE CANVA PARA TURISMO           -->
+  <!-- ========================================================== -->
+  <section class="palettes-section" id="paletas">
+    <div class="container">
+      <div class="section-header-centered">
+        <div class="palette-kicker-badge">
+          <i data-lucide="palette"></i>
+          <span>Paso 2: Personalización de Marca</span>
+        </div>
+        <h2 class="palette-main-title">
+          Paletas de Colores para su Agencia <br>
+          <span class="serif-title">Inspiradas en las 100 Mejores Combinaciones de Canva</span>
+        </h2>
+        <p class="palette-main-desc">
+          Si el cliente te dice: <em>"Me gusta la estructura pero mis colores corporativos son otros"</em>, muéstrale estas combinaciones armónicas diseñadas específicamente para marcas turísticas.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs for Palettes -->
+      <div class="palette-category-wrapper">
+        <div class="palette-category-tabs" id="paletteCategoryTabs">
+          <!-- Injected dynamically by app.js -->
+        </div>
+      </div>
+
+      <!-- Interactive Palettes Grid -->
+      <div class="palettes-grid" id="palettesGrid">
+        <!-- Injected dynamically by app.js -->
+      </div>
+
+      <!-- Live Palette Showcase Banner -->
+      <div class="palette-preview-box" id="palettePreviewBox">
+        <div class="preview-box-left">
+          <span class="preview-box-tag">Vista Previa de Aplicación</span>
+          <h3 id="previewPaletteName">Paleta Seleccionada: Tierra Andina & Adobe</h3>
+          <p id="previewPaletteDesc">Ideal para turismo vivencial, ecoturismo y rutas culturales en los Andes.</p>
+        </div>
+        <div class="preview-box-actions">
+          <button class="btn btn-outline-white" id="copyCurrentPaletteBtn">
+            <i data-lucide="copy"></i>
+            <span>Copiar Códigos Hex</span>
+          </button>
+          <a href="https://wa.me/51987654321?text=Hola%20Molinaz%20Dev%2C%20quiero%20cotizar%20una%20web%20con%20la%20paleta%20de%20colores%20que%20eleg%C3%AD%20en%20el%20showroom." target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="quotePaletteBtn">
+            <i data-lucide="check"></i>
+            <span>Elegir Esta Paleta para mi Web</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================== -->
+  <!-- SECCIÓN 3: CONFIGURADOR INTERACTIVO DE WEB TURÍSTICA       -->
+  <!-- ========================================================== -->
+  <section class="builder-section" id="configurador">
+    <div class="container">
+      <div class="section-header-centered">
+        <div class="builder-kicker-badge">
+          <i data-lucide="sliders"></i>
+          <span>Paso 3: Diseña la Propuesta con tu Cliente</span>
+        </div>
+        <h2 class="builder-main-title">
+          Configurador de Web Turística en Vivo <br>
+          <span class="serif-title">Elige Modelo, Colores y Módulos a Medida</span>
+        </h2>
+        <p class="builder-main-desc">
+          Arma la arquitectura ideal durante la videollamada. En esta campaña entregamos de <strong>10 a 20 días hábiles</strong> con <strong>feedback continuo</strong> en cada revisión para que todo quede 100% al gusto del cliente.
+        </p>
+      </div>
+
+      <div class="builder-workspace">
+        <!-- Left: Configuration Controls -->
+        <div class="builder-form-panel">
+          
+          <!-- 1. Modelo Base Selector -->
+          <div class="builder-step-group">
+            <div class="step-badge-title">
+              <span class="step-num">1</span>
+              <div>
+                <h4>Selecciona el Modelo Base de la Agencia</h4>
+                <p>La estructura de diseño según su tipo de rutas y clientes</p>
+              </div>
+            </div>
+            <div class="base-models-selector" id="baseModelsSelector">
+              <!-- Injected by app.js -->
+            </div>
+          </div>
+
+          <!-- 2. Paleta de Colores Selector -->
+          <div class="builder-step-group">
+            <div class="step-badge-title">
+              <span class="step-num">2</span>
+              <div>
+                <h4>Paleta de Colores de Marca (Canva)</h4>
+                <p>O aplicamos el manual de marca corporativo del operador</p>
+              </div>
+            </div>
+            <div class="builder-palette-select-wrapper">
+              <select id="builderPaletteSelect" class="builder-select">
+                <!-- Injected by app.js -->
+              </select>
+              <div class="palette-quick-swatches" id="builderQuickSwatches">
+                <!-- Quick swatches injected by app.js -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Módulos Turísticos Checklist -->
+          <div class="builder-step-group">
+            <div class="step-badge-title">
+              <span class="step-num">3</span>
+              <div>
+                <h4>Módulos Turísticos a Incluir (<span id="selectedModulesCount">8</span> seleccionados)</h4>
+                <p>Activa módulos y usa las flechas <strong>▲ ▼</strong> para ordenar la posición de las secciones en la web</p>
+              </div>
+            </div>
+
+            <!-- Category Filter for Modules -->
+            <div class="builder-module-tabs" id="moduleCategoryTabs">
+              <button class="m-tab active" data-mod-cat="all">Todos los Módulos (15)</button>
+              <button class="m-tab" data-mod-cat="core">Esenciales Core</button>
+              <button class="m-tab" data-mod-cat="ventas">Ventas & Conversión</button>
+              <button class="m-tab" data-mod-cat="andino">Andino & Aventura</button>
+              <button class="m-tab" data-mod-cat="confianza">Confianza & Marca</button>
+            </div>
+
+            <!-- Modules Checklist -->
+            <div class="modules-checklist" id="modulesChecklist">
+              <!-- Injected by app.js -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Live Mockup & Realtime Scope Estimation -->
+        <div class="builder-summary-panel">
+          <div class="summary-card">
+            <div class="summary-card-header">
+              <div class="summary-title-row">
+                <div>
+                  <span class="summary-badge">Previsualización Interactiva</span>
+                  <h3 id="summaryAgencyModel">Modelo: MaxisTravel Cusco</h3>
+                </div>
+                <div class="summary-palette-chip" id="summaryPaletteChip">
+                  <span class="chip-color-dot" id="summaryDot"></span>
+                  <span id="summaryPaletteName">Tierra Andina & Adobe</span>
+                </div>
+              </div>
+
+              <!-- Preview Controls: Mode Tabs, Device Viewport & Fullscreen Button -->
+              <div class="preview-toolbar">
+                <div class="preview-mode-tabs" id="previewModeTabs">
+                  <button class="p-tab active" data-preview-mode="web" title="Ver la web real con diseño, imágenes y colores">
+                    <i data-lucide="layout"></i>
+                    <span>Previsualización Web</span>
+                  </button>
+                  <button class="p-tab" data-preview-mode="schematic" title="Ver esquema técnico de bloques y arquitectura">
+                    <i data-lucide="layers"></i>
+                    <span>Esquema de Módulos</span>
+                  </button>
+                </div>
+
+                <div class="preview-device-toggle" id="previewDeviceToggle">
+                  <button class="p-dev-btn active" data-device="desktop" title="Vista Escritorio">
+                    <i data-lucide="monitor"></i>
+                    <span>Escritorio</span>
+                  </button>
+                  <button class="p-dev-btn" data-device="mobile" title="Vista Celular">
+                    <i data-lucide="smartphone"></i>
+                    <span>Celular</span>
+                  </button>
+                </div>
+
+                <button class="p-btn-fullscreen" id="openFullscreenPreviewBtn" title="Ver la web en pantalla completa para Google Meet">
+                  <i data-lucide="maximize-2"></i>
+                  <span>Pantalla Completa</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Browser Mockup Window -->
+            <div class="schematic-mockup-frame" id="builderMockupFrame">
+              <div class="schematic-browser-bar">
+                <div class="browser-dots">
+                  <span class="s-dot red"></span>
+                  <span class="s-dot yellow"></span>
+                  <span class="s-dot green"></span>
+                </div>
+                <div class="browser-url-bar">
+                  <i data-lucide="lock" class="url-lock"></i>
+                  <span class="s-url" id="schematicUrl">https://maxistravel-cusco.pe/</span>
+                </div>
+                <div class="browser-live-tag">
+                  <span class="pulse-dot"></span>
+                  <span>En Vivo</span>
+                </div>
+              </div>
+
+              <!-- Viewport Container for Web & Schematic -->
+              <div class="builder-viewport-container desktop" id="builderViewportContainer">
+                <!-- 1. Real Visual Webpage Simulator -->
+                <div class="builder-live-web" id="builderLiveWeb">
+                  <!-- Dynamically rendered realistic travel website -->
+                </div>
+
+                <!-- 2. Schematic Architecture Breakdown -->
+                <div class="schematic-body hidden" id="schematicBody">
+                  <!-- Dynamic active blocks rendered in real time -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Estimated Days & Feedback Guarantee -->
+            <div class="delivery-time-box">
+              <div class="time-header">
+                <div class="time-icon"><i data-lucide="clock"></i></div>
+                <div>
+                  <span class="time-title">Tiempo Estimado de Entrega:</span>
+                  <strong class="time-val" id="estimatedDays">12 a 16 Días Hábiles</strong>
+                </div>
+              </div>
+              <div class="feedback-guarantee">
+                <i data-lucide="refresh-cw"></i>
+                <p><strong>Feedback Continuo Incluido:</strong> Recibimos tus observaciones en cada etapa para que fotos, tours, tarifas y colores queden 100% a tu medida y gusto.</p>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="summary-actions">
+              <a href="#" id="sendConfigWhatsappBtn" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-lg" style="width: 100%; justify-content: center;">
+                <i data-lucide="send"></i>
+                <span>Enviar Esta Especificación por WhatsApp</span>
+              </a>
+              <button class="btn btn-ghost btn-sm" id="resetConfigBtn" style="width: 100%;">
+                <i data-lucide="rotate-ccw"></i>
+                <span>Restablecer Configuración</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================== -->
+  <!-- SECCIÓN 4: BENEFICIOS COMERCIALES Y CIERRE                 -->
+  <!-- ========================================================== -->
+  <section class="cta-section" id="beneficios">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-stamp">
+          <i data-lucide="award"></i>
+        </div>
+        <div class="cta-content">
+          <span class="cta-kicker">Paso 4: Compromiso de Calidad Molinaz Dev</span>
+          <h2>Entrega en 10 a 20 Días Hábiles con Feedback Continuo</h2>
+          <p>
+            No entregamos plantillas genéricas de un día para otro. Nos tomamos de <strong>10 a 20 días hábiles</strong> según la complejidad del proyecto para construir la web en estrecha colaboración contigo: <strong>recibimos tus comentarios y revisiones en cada avance</strong> hasta que cada tour, foto, color y texto quede 100% a tu medida y gusto antes de publicar.
+          </p>
+          <div class="methodology-pills">
+            <span class="m-pill"><i data-lucide="check"></i> Revisiones Continuas</span>
+            <span class="m-pill"><i data-lucide="check"></i> Ajustes a tu Medida</span>
+            <span class="m-pill"><i data-lucide="check"></i> Capacitación Incluida</span>
+          </div>
+        </div>
+        <div class="cta-action">
+          <a href="https://wa.me/51987654321?text=Hola%20Molinaz%20Dev%2C%20acabo%20de%20revisar%20el%20showroom%20y%20quiero%20cotizar%20la%20web%20para%20mi%20agencia%20con%20feedback%20continuo." target="_blank" rel="noopener noreferrer" class="btn btn-cta">
+            <i data-lucide="message-square"></i>
+            <span>Cerrar Cotización por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer con firma peruana -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <div class="brand-crest-small"><i data-lucide="sun"></i></div>
+          <span>Molinaz<span class="accent-text">Dev</span></span>
+        </div>
+        <p>Soluciones de ingeniería web y presencia digital enfocadas en el ecosistema turístico del Perú y Latinoamérica.</p>
+        <div class="footer-badges">
+          <span class="f-badge"><i data-lucide="shield-check"></i> Seguro & Rápido</span>
+          <span class="f-badge"><i data-lucide="smartphone"></i> Responsive Design</span>
+          <span class="f-badge"><i data-lucide="map-pin"></i> Hecho en Perú</span>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-note">
+          <strong><i data-lucide="plus-circle"></i> ¿Cómo agregar una nueva demo?</strong>
+          <p>Solo añade un objeto al archivo <code>src/data/demos.js</code> y este catálogo se actualizará de forma instantánea.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>© 2026 Molinaz Dev. Diseñado para potenciar el turismo nacional y receptivo.</p>
+        <span class="andean-tag">Cusco • Ayacucho • Arequipa • Lima</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- MODAL: Device Previewer (Visor de Dispositivos) -->
+  <!-- ============================================== -->
+  <dialog class="device-modal" id="deviceModal">
+    <div class="device-modal-header">
+      <div class="device-demo-info">
+        <span class="device-modal-badge" id="modalBadge">Ecoturismo</span>
+        <h3 id="modalTitle">Valle del Sondondo Expeditions</h3>
+        <a id="modalExternalLink" href="#" target="_blank" rel="noopener noreferrer" class="external-pill-link" title="Abrir en pestaña nueva">
+          <span id="modalUrlDisplay">sondondo.molinazdev.lat</span>
+          <i data-lucide="external-link"></i>
+        </a>
+      </div>
+
+      <!-- Device Viewport Switcher -->
+      <div class="device-switcher">
+        <button class="switcher-btn active" data-device="desktop" title="Vista Escritorio (Desktop)">
+          <i data-lucide="monitor"></i>
+          <span>Desktop</span>
+        </button>
+        <button class="switcher-btn" data-device="tablet" title="Vista Tablet (768px)">
+          <i data-lucide="tablet"></i>
+          <span>Tablet</span>
+        </button>
+        <button class="switcher-btn" data-device="mobile" title="Vista Móvil (390px)">
+          <i data-lucide="smartphone"></i>
+          <span>Móvil</span>
+        </button>
+      </div>
+
+      <!-- Modal Actions -->
+      <div class="modal-actions">
+        <a id="modalOpenTabBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="Abrir en pestaña completa para Google Meet">
+          <i data-lucide="maximize"></i>
+          <span>Abrir Pantalla Completa</span>
+        </a>
+        <a id="modalWhatsappBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm" title="Cotizar esta propuesta por WhatsApp">
+          <i data-lucide="send"></i>
+          <span>Cotizar Este Diseño</span>
+        </a>
+        <button class="close-modal-btn" id="closeModalBtn" title="Cerrar visor">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="device-modal-body">
+      <!-- Device Screen Frame Wrapper -->
+      <div class="device-frame-container">
+        <div class="device-frame desktop-mode" id="deviceFrame">
+          <div class="device-notch" id="deviceNotch">
+            <span class="speaker"></span>
+            <span class="camera"></span>
+          </div>
+
+          <!-- Notice for sites like MaxisTravel that block iframes -->
+          <div class="iframe-security-notice" id="iframeSecurityNotice" style="display: none;">
+            <div class="security-card">
+              <div class="security-icon"><i data-lucide="shield-alert"></i></div>
+              <h3>Modo Presentación en Pantalla Completa</h3>
+              <p>Este sitio web utiliza protección de servidor contra marcos externos. Para mostrárselo al cliente en Google Meet, haz clic en el botón:</p>
+              <a id="securityOpenBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <i data-lucide="external-link"></i>
+                <span>Abrir Web en Pestaña Completa</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="iframe-overlay-loader" id="iframeLoader">
+            <div class="spinner"></div>
+            <span>Cargando demo en vivo...</span>
+          </div>
+
+          <iframe id="previewIframe" src="about:blank" frameborder="0" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ============================================== -->
+  <!-- MODAL: Sales Pitch Guide for Sellers           -->
+  <!-- ============================================== -->
+  <dialog class="sales-guide-modal" id="salesGuideModal">
+    <div class="sales-guide-container">
+      <div class="sales-guide-header">
+        <div class="guide-title-box">
+          <div class="guide-icon-badge">
+            <i data-lucide="video"></i>
+          </div>
+          <div>
+            <h3>Guion Comercial para Google Meet</h3>
+            <p>Estructura de 4 pasos para conducir la llamada y cerrar la venta</p>
+          </div>
+        </div>
+        <button class="close-modal-btn" id="closeSalesGuideBtn">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <div class="sales-guide-body">
+        <div class="guide-card">
+          <h4><i data-lucide="check-circle-2"></i> Paso 1: Diagnóstico del cliente (1-2 minutos)</h4>
+          <p>
+            <em>"¿En qué destinos operas y qué tipo de tours vendes más? (¿Cusco clásico, senderismo/vivencial, aventura en Colca o playa?)"</em>. <br>
+            Filtra de inmediato la categoría en el showroom para mostrarle la demo exacta.
+          </p>
+        </div>
+
+        <div class="guide-card">
+          <h4><i data-lucide="check-circle-2"></i> Paso 2: Mostrar el tour y la reserva por WhatsApp (3 minutos)</h4>
+          <p>
+            Haz clic en <strong>"Abrir Web en Vivo"</strong>. Navega por un tour y haz clic en el botón de WhatsApp. <br>
+            <em>"Mira cómo el mensaje se arma solo con las fechas y el tour. El cliente no se confunde y tú recibes la consulta lista para cerrar."</em>
+          </p>
+        </div>
+
+        <div class="guide-card">
+          <h4><i data-lucide="check-circle-2"></i> Paso 3: El dolor de las comisiones de OTAs (2 minutos)</h4>
+          <p>
+            <em>"¿Sabías que Viator o Civitatis te quitan del 20% al 30%? En un tour de $200 pierdes hasta $60 por pasajero. Con tu web propia de Molinaz Dev, ese dinero entra directo a tu cuenta."</em>
+          </p>
+        </div>
+
+        <div class="guide-card">
+          <h4><i data-lucide="check-circle-2"></i> Paso 4: Colores y entrega rápida (2 minutos)</h4>
+          <p>
+            Muestra la sección de <strong>Paletas de Colores de Canva</strong>: <br>
+            <em>"Si tu marca tiene otros colores, aquí tenemos combinaciones profesionales listas. En 3 a 7 días hábiles te entregamos la web completa con tus fotos, tarifas y logotipo."</em>
+          </p>
+        </div>
+      </div>
+
+      <div class="sales-guide-footer">
+        <button class="btn btn-primary" id="gotItBtn">
+          <span>¡Listo para la llamada! Volver al Showroom</span>
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ============================================================ -->
+  <!-- MODAL: Fullscreen Web Previewer for Google Meet Presentation -->
+  <!-- ============================================================ -->
+  <dialog class="fullscreen-preview-modal" id="fullscreenPreviewModal">
+    <div class="fullscreen-modal-header">
+      <div class="fs-brand-info">
+        <div class="fs-title-row">
+          <span class="fs-badge" id="fsModalBadge">Molinaz Dev • Simulación Real</span>
+          <h3 id="fsModalTitle">Previsualización Web en Pantalla Completa</h3>
+        </div>
+        <a id="fsDomainLink" href="#" target="_blank" rel="noopener noreferrer" class="fs-domain-pill">
+          <i data-lucide="lock" style="width: 12px; height: 12px; color: #10B981;"></i>
+          <span id="fsDomainPill">https://maxistravel-cusco.pe/</span>
+          <i data-lucide="external-link" style="width: 11px; height: 11px; opacity: 0.7;"></i>
+        </a>
+      </div>
+
+      <!-- Device Viewport Switcher -->
+      <div class="fs-device-switcher" id="fsDeviceSwitcher">
+        <button class="fs-switcher-btn active" data-fs-device="desktop" title="Vista Escritorio Completo (100% ancho)">
+          <i data-lucide="monitor"></i>
+          <span>Desktop</span>
+        </button>
+        <button class="fs-switcher-btn" data-fs-device="tablet" title="Vista Tablet (768px)">
+          <i data-lucide="tablet"></i>
+          <span>Tablet</span>
+        </button>
+        <button class="fs-switcher-btn" data-fs-device="mobile" title="Vista Smartphone (390px)">
+          <i data-lucide="smartphone"></i>
+          <span>Móvil</span>
+        </button>
+      </div>
+
+      <!-- Actions -->
+      <div class="fs-modal-actions">
+        <a id="fsWhatsappBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm" title="Cotizar propuesta configurada">
+          <i data-lucide="send"></i>
+          <span>Cotizar Esta Web</span>
+        </a>
+        <button class="close-modal-btn" id="closeFullscreenBtn" title="Salir de pantalla completa (Esc)">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="fullscreen-modal-body">
+      <div class="fs-viewport-container desktop" id="fsViewportContainer">
+        <!-- Rendered Fullscreen Live Web Preview -->
+        <div class="fs-live-web" id="fsLiveWeb"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Toast Notification for Copying Hex Codes -->
+  <div class="toast-notification" id="toastNotification">
+    <i data-lucide="check-circle-2"></i>
+    <span id="toastMessage">¡Códigos de color copiados al portapapeles!</span>
+  </div>
+
+  <!-- Application Logic -->
+  <script type="module" src="/src/js/app.js"></script>
+</body>
+</html>
