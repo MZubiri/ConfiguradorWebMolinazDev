@@ -1298,8 +1298,8 @@ function openFullscreenPreviewModal() {
   }
 
   if (fsDeviceSwitcher) {
-    fsDeviceSwitcher.querySelectorAll('.switcher-btn').forEach(b => {
-      b.classList.toggle('active', b.dataset.device === (fullscreenDevice || 'desktop'));
+    fsDeviceSwitcher.querySelectorAll('.fs-switcher-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.fsDevice === (fullscreenDevice || 'desktop'));
     });
   }
 
@@ -1613,13 +1613,14 @@ function setupEventListeners() {
   // Fullscreen Device Switcher
   if (fsDeviceSwitcher) {
     fsDeviceSwitcher.addEventListener('click', (e) => {
-      const btn = e.target.closest('.switcher-btn');
+      const btn = e.target.closest('.fs-switcher-btn');
       if (!btn) return;
 
-      fsDeviceSwitcher.querySelectorAll('.switcher-btn').forEach(b => b.classList.remove('active'));
+      fsDeviceSwitcher.querySelectorAll('.fs-switcher-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      const dev = btn.dataset.device;
+      const dev = btn.dataset.fsDevice;
       setFullscreenDeviceMode(dev);
+      showToast(dev === 'desktop' ? 'Pantalla Completa: Vista Laptop / Desktop' : dev === 'tablet' ? 'Pantalla Completa: Vista Tablet (768px)' : 'Pantalla Completa: Vista Smartphone Móvil (390px)');
     });
   }
 

@@ -3780,21 +3780,71 @@ dialog.fullscreen-preview-modal::backdrop {
 .fs-viewport-container.desktop {
   width: 100%;
   max-width: 1280px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .fs-viewport-container.tablet {
   width: 768px;
-  border: 5px solid #33271F;
+  border: 10px solid #2B231D;
+  border-radius: 28px;
+  box-shadow: 0 0 0 2px rgba(212, 168, 83, 0.25), 0 20px 60px rgba(0, 0, 0, 0.7);
 }
 
 .fs-viewport-container.mobile {
   width: 390px;
-  border: 7px solid #201712;
-  border-radius: 36px;
+  border: 12px solid #2B231D;
+  border-radius: 44px;
+  box-shadow: 0 0 0 2px rgba(212, 168, 83, 0.35), 0 25px 60px rgba(0, 0, 0, 0.85);
 }
 
 .fs-live-web {
   width: 100%;
   min-height: 100%;
+}
+
+/* Responsive internal overrides when in Mobile simulation mode */
+.fs-viewport-container.mobile .w-navbar .w-nav-menu,
+.fs-viewport-container.mobile .w-topbar-left span:not(.w-lang-chip) {
+  display: none;
+}
+
+.fs-viewport-container.mobile .w-search-bar {
+  grid-template-columns: 1fr;
+  margin: 10px 12px;
+}
+
+.fs-viewport-container.mobile .w-tours-grid {
+  grid-template-columns: 1fr;
+}
+
+.fs-viewport-container.tablet .w-tours-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.fs-viewport-container.mobile .w-hero {
+  padding: 24px 16px 20px;
+  min-height: 210px;
+}
+
+.fs-viewport-container.mobile .w-hero-title {
+  font-size: 19px;
+  line-height: 1.25;
+}
+
+.fs-viewport-container.mobile .w-hero-actions {
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.fs-viewport-container.mobile .w-btn-primary,
+.fs-viewport-container.mobile .w-btn-outline {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.fs-viewport-container.mobile .w-itin-step {
+  gap: 10px;
 }
 
